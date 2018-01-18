@@ -9,7 +9,7 @@ namespace Madapaja\TwigModule;
 use BEAR\AppMeta\AbstractAppMeta;
 use Ray\Di\ProviderInterface;
 
-class AppPathProvider implements ProviderInterface
+class TemplatePathProvider implements ProviderInterface
 {
     /**
      * @var AbstractAppMeta

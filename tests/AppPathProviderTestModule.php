@@ -28,6 +28,6 @@ class AppPathProviderTestModule extends AbstractModule
     {
         $this->bind(AbstractAppMeta::class)->toInstance(new AppMeta('Madapaja\TwigModule', null, $this->dir));
         $this->install(new TwigModule());
-        $this->bind()->annotatedWith(TwigPaths::class)->toProvider(AppPathProvider::class);
+        $this->bind()->annotatedWith(TwigPaths::class)->toProvider(TemplatePathProvider::class);
     }
 }
